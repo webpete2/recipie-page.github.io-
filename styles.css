@@ -1,0 +1,166 @@
+body {
+    font-size: 16px;
+
+    height: 100vh;
+
+    background-color: hsl(30, 54%, 90%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 32.5rem;
+    margin-bottom: 35rem;
+}
+
+/* 🟢 element selectors 🟢 */
+h1,
+h2,
+p {
+    margin-left: 2.5rem;
+}
+
+h1, h2, h3 {
+    font-family: "Young Serif";
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+p, b, span, td {
+    font-family: Outfit;
+}
+
+p, span , td{
+    color: hsl(30, 10%, 34%);
+
+    font-size: 1.0625rem;
+    font-weight: 500;
+}
+
+b {
+    color: black;
+    font-weight: bold;
+}
+
+
+.intro img,
+.time,
+.ingre,
+.instru
+{
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 44.5rem;
+}
+
+
+.container {
+    border: 1px solid white;
+    border-radius: 1.5rem;
+
+    background-color: white;
+
+    height: 110rem;
+    width: 50rem;
+}
+
+
+/* 🟢 flexbox 🟢 */
+.intro,
+.time,
+.ingre
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* intro */
+.intro img {
+    border-radius: 1rem;
+
+    margin-top: 2.5rem;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    
+    color: hsl(24, 5%, 18%);
+}
+
+.intro p {
+    margin-right: 2.5rem;
+}
+
+
+/* time */
+.time {
+    border: 1px solid hsl(330, 100%, 98%);
+    border-radius: 1.5rem;
+    background-color: hsl(330, 100%, 98%);
+}
+
+.time h3, .number {
+    color: hsl(332, 51%, 32%);
+}
+
+.time h3 {
+    color: hsl(332, 51%, 32%);
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+.time li, .ingre li, .instru li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+.time li::marker,
+.ingre li::marker
+{
+    color: hsl(332, 51%, 32%);
+}
+
+/* ingredients */
+
+.ingre, .instru, .nutri{
+    border: 1px solid white;
+}
+
+.ingre, .instru {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.ingre h2, .instru h2
+{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.ingre li span {
+    margin-left: 0.5rem;
+}
+
+/* instructions */
+
+.instru li::marker {
+    color: hsl(332, 51%, 32%);
+
+    font-family: Outfit;
+    font-weight: bold;
+}
+
+/* nutrition */
+.nutri table {
+    margin-left: 4.5rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutri tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
